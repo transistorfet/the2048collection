@@ -1,0 +1,6 @@
+(executable
+  (name ocaml2048)
+  (libraries
+    str
+    graphics
+  ))
