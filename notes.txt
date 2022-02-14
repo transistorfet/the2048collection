@@ -1,0 +1,63 @@
+
+Completed:
+
+    Haskell2048:
+        - It was particularly annoying to fit in the random number generation after the fact
+        - lots of difficulty with debugging with print statements
+        - it really constraints how you can solve a problem such that certain things just
+          can't be done (without doing something unsafe or using external bindings, or
+          fighting with a custom library which does the dirty work in a performant way)
+
+    Ocaml2048:
+        - I started this after getting stuck on the Haskell version, and it was a breeze by
+          comparison, but I know the language better and have written a lot more code in it
+
+    Racket2048:
+        - the object system that the drawing library uses was pretty clumsy compared to the
+          other versions, and it seemed unnatural to do so much state mutation after writing
+          the Haskell and Ocaml versions
+        - the postfix style gets a bit tiring after a while, compared to the ML languages
+          above, which feel more natural
+
+    Elixir2048:
+        - by far the most "heavy" feeling, with a lot of background stuff to spin up
+        - the graphics library seems like a complete encapsulation of the program such that
+          you're quite beholden to what it allows and how it behaves.  More like a framework
+        - dynamic typing and bare assignments seemed kinda weird after the other versions
+
+Incomplete:
+
+    CommonLisp2048:
+        - it seemed like the only graphics library that was well maintained was the SDL
+          bindings, but I couldn't get text easily and didn't want to dig into SDL to get
+          something working, so I didn't complete it.  It would have been pretty similar
+          to the racket version in terms of the game manipulation
+
+Possible Other Version:
+- F#
+- Elm
+- Smalltalk
+- Go
+
+Unlikely But Possible:
+- Standard ML
+- Julia
+- Scala
+- Ada
+- Swift
+- Nim
+- Crystal
+- Chapel
+- Mercury
+
+
+Thoughts:
+    - this game isn't the best evaluation of some of these languages because it requires some
+      kind of graphics or display, which a lot of languages either don't have support for, or
+      are not well maintained because the language is primarily used in other domains.
+    - It is always possible to print the text for the entire board each time or use ncurses,
+      but that wouldn't compare as well to the implementations using a GUI, and for this game
+      in particular, I feel like it would be disorienting to have multiple board printouts on
+      screen (not using ncurses), but I haven't tried it so I'm not sure
+
+
